@@ -7,25 +7,21 @@ body {
 	margin: 0px;
 }
 
-.ctrl {    
-	max-width: 30px;
-    position: absolute;
-    bottom: 10px;
-    color: black;
-    text-align: left;
-    padding-left: 1%;
+.container {
+	border: 0px;
 }
 
-div {
+div.elem {
 	border: solid 1px black;
+	
+	min-height: fit-content;
+	clear: both;
+	padding: 10px;
 }
 
-p.normal {
-	word-wrap: normal;
-}
-
-p.break {
-	word-wrap: break-word;
+p {
+	word-break: break-word;
+	margin: 5px;
 }
 
 img {
@@ -35,30 +31,147 @@ img {
 	max-width: 100%;
 }
 
-area {
-	position: relative;
-	/*
-	position: absolute;
-	*/
-}
-
 .nerfed {
 	max-height: 200px;
-	max-width: 200px;
+}
+
+#b1 {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: stretch;
+}
+
+#a1 {
+	display: flex;
+	flex-direction: row;
+
+	min-height: 100px;
+	min-width: 100px;
+
+	background-color: coral;
+
+	align-items: center;
+	justify-content: space-between;
+	font-size: 24px;
+
+}
+
+#a7 {
+	display: flex;
+	justify-content: space-between;
+
+	min-height: 100px;
+	min-width: 100px;
+
+	background-color: palegoldenrod;
+
+	align-items: center;
+	font-size: 11px;
+}
+
+#b2 {
+	display: flex;
+	flex-direction: row;
+
+	min-height: 500px;
+
+	flex-direction: row;
+}
+
+#a4 {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100px;
+	min-width: 15%;
+	width: 25%;
+
+	background-color: yellowgreen;
+
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+#b3 {
+	display: flex;
+	flex-direction: column;
+
+	min-width: 15%;
+	width: 25%;
+}
+
+#a2 {
+	display:  flex;
+
+	min-height: 50px;
+	min-width: 100px;
+
+	background-color: palevioletred;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#a5 {
+	display: flex;
+	flex-direction: column;
+
+	flex-grow: 1;
+	min-height: 100px;
+	min-width: 100px;
+
+	background-color: lightblue;
+
+	justify-content: center;
+	align-items: flex-start;
 }
 
 nav {
 	display: flex;
 	flex-direction: column;
+
 	align-items: left;
 	justify-content: center;
 }
 
+#b4 {
+	display: flex;
+	flex-direction: column;
+
+	flex-grow: 1;
+	min-width: 100px;
+}
+
+#a3 {
+	display: flex;
+	flex-direction: column;
+
+	flex-grow: 1;
+	min-height: 100px;
+	min-width: 100px;
+
+	background-color: darkseagreen;
+
+	justify-content: flex-start;
+	text-align: justify;
+}
+
+#a6 {
+	display: flex;
+
+	min-height: 50px;
+	min-width: 100px;
+
+	background-color: blueviolet;
+
+	justify-content: center;
+	align-items: center;
+}
+
 #boxX, #boxY {
 	background: whitesmoke;
-	min-height: 30%;
-	min-width: 20%;
-	margin: 3%;
 	font-size: 14px;
 }
 
@@ -72,97 +185,8 @@ nav {
 	text-align: left;
 }
 
-.all {
-	display: grid;
-	grid-template-columns: 25% 50% 25%;
-	grid-template-rows: auto;
-	grid-template-areas: 
-		"a1 a1 a1"
-		"a2 a3 a4"
-		"a5 a3 a4"
-		"a5 a6 a4"
-		"a7 a7 a7";
-	justify-items: stretch;
-	height: 100%;
-	width:  100%;
-	background-color: paleturquoise;
-}
-
-#a1 {
-	padding: 1%;
-	max-height: fit-content;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	background-color: coral;
-	grid-area: a1;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 24px;
-}
-
-#a2 {
-	display:  flex;
-	justify-content: center;
-	align-items: center;
-	background-color: palevioletred;
-	grid-area: a2;
-}
-
-#a3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: darkseagreen;
-	grid-area: a3;
-	padding: 3%;
-}
-
-#a4 {
-	background-color: yellowgreen;
-	grid-area: a4;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 14px;
-	padding: 3%;
-}
-
 .t4_1, #t2 {
 	text-align: center;
-}
-
-#a5 {
-	background-color: lightblue;
-	grid-area: a5;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 3%;
-}
-
-#a6 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: blueviolet;
-	grid-area: a6;
-	padding: 3%;
-}
-
-#a7 {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: palegoldenrod;
-	grid-area: a7;
-	font-size: 11px;
-	padding: 1%;
-	height: auto;
-	max-height: fit-content;
 }
 
 .one_list {
