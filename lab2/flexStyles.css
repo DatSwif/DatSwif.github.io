@@ -1,0 +1,15 @@
+#all {
+	margin: 0px;
+}
+
+.container {
+	border: 0px;
+}
+
+.elem {
+	border: 1px solid black;
+
+	min-height: fit-content;
+	padding: 10px;
+}
+

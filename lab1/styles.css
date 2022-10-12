@@ -86,7 +86,7 @@ img {
 	flex-direction: column;
 
 	min-height: 100px;
-	min-width: 15%;
+	min-width: 25%;
 	width: 25%;
 
 	background-color: yellowgreen;
@@ -99,7 +99,7 @@ img {
 #b3 {
 	display: flex;
 	flex-direction: column;
-	flex-shrink: 1;
+	min-width: 25%;
 	width: 25%;
 }
 
@@ -107,7 +107,6 @@ img {
 	display:  flex;
 
 	min-height: 50px;
-	min-width: 100px;
 
 	background-color: palevioletred;
 
@@ -131,7 +130,7 @@ img {
 nav {
 	display: flex;
 	flex-direction: column;
-	
+
 	word-break: break-all;
 	align-items: left;
 	justify-content: center;
@@ -142,7 +141,7 @@ nav {
 	flex-direction: column;
 
 	flex-grow: 1;
-	min-width: 100px;
+	min-width: 50%px;
 }
 
 #a3 {
