@@ -18,7 +18,7 @@ img {
 #all {
 	display: grid;
 	grid-template-rows: minmax(100px, auto) minmax(80vh, auto) minmax(100px, auto);
-
+	
 	margin: 0px;
 }
 
